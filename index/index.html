@@ -1,0 +1,98 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>جاسم أحمد حسون</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #2e3a59;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .profile-image {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      margin-bottom: 10px;
+      object-fit: cover;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    .about, .posts {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    .post {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+    .visitor-counter {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #777;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="images/profile.jpg" alt="صورة جاسم" class="profile-image" />
+    <h1>مدونة جاسم أحمد حسون</h1>
+  </header>
+
+  <div class="container">
+    <section class="about">
+      <h2>من أنا</h2>
+      <p>
+        أنا جاسم أحمد من العراق، محافظة صلاح الدين، قضاء الشرقاط، ناحية آشور. خريج معهد طبي - قسم المختبرات الطبية، مواليد 2006.
+      </p>
+    </section>
+
+    <section class="posts">
+      <h2>أحدث المقالات</h2>
+      <div class="post">
+        <h3><a href="posts/post1.html">أهمية التحاليل الطبية في التشخيص</a></h3>
+        <p>كيف تساعد التحاليل الطبية في كشف الأمراض مبكرًا...</p>
+      </div>
+      <div class="post">
+        <h3><a href="posts/post2.html">حياتي كطالب مختبرات</a></h3>
+        <p>تجربتي في الدراسة، والتحديات التي واجهتها، وأهم الدروس...</p>
+      </div>
+    </section>
+
+    <div class="visitor-counter">
+      الزوار:  
+      <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=yourdomain.com&count_bg=%2339C5BB&title_bg=%23555555&icon=globe.svg&icon_color=%23E7E7E7&title=Visitors&edge_flat=false"/>
+    </div>
+  </div>
+
+</body>
+</html>
