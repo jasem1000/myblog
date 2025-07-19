@@ -3,7 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>جاسم أحمد حسون</title>
+  <title> جاسم أحمد حسون</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta name="author" content="جاسم احمد">
+  <meta name="description" content="تقني مختبرات طبية ">
+   <meta name="keywords" content="تقني ,مختبرات,محلل,طب">
+   <meta name="robots" content="index,follow">
+   <meta property:og="title" content="جاسم احمد حسون">
+      <meta property:og="description" content="تقني مختبرات طبية  ">
+   <meta property:og="images" content="images/profile.jpg">
+   <meta property:og="" content="https://jasem1000.github.io/myblog/">
+
+  
+   
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -17,7 +29,7 @@
     header {
       background-color: #000;
       color: white;
-      padding: 40px 20px;
+      padding: 40px 20px 20px;
       text-align: center;
       border-bottom: 2px solid #39c5bb;
     }
@@ -25,11 +37,29 @@
     .profile-image {
       width: 130px;
       height: 130px;
-      border-radius: 15px;
       object-fit: cover;
       border: 3px solid #39c5bb;
       box-shadow: 0 0 20px #39c5bb66;
       margin-bottom: 15px;
+      border-radius: 10px;
+    }
+
+    .social-links {
+      text-align: center;
+      margin: 15px 0 10px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      margin: 0 10px;
+      color: #39c5bb;
+      font-size: 22px;
+      transition: transform 0.3s;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.2);
+      color: #ffffff;
     }
 
     .container {
@@ -38,7 +68,7 @@
       padding: 20px;
     }
 
-    .about, .posts {
+    .box {
       background: #1e1e1e;
       padding: 20px;
       margin-bottom: 20px;
@@ -46,7 +76,7 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
 
-    .about h2, .posts h2 {
+    .box h2 {
       color: #39c5bb;
     }
 
@@ -70,84 +100,101 @@
 
     .visitor-counter {
       text-align: center;
-      margin-top: 30px;
+      margin: 30px 0;
       font-size: 14px;
       color: #888;
     }
 
-    .social-links {
+    footer {
+      background-color: #000;
+      color: #888;
       text-align: center;
-      margin: 30px 0 10px;
+      padding: 15px;
+      font-size: 14px;
+      border-top: 1px solid #39c5bb;
     }
 
-    .social-links a {
+    nav {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    nav a {
       display: inline-block;
       margin: 0 10px;
+      padding: 8px 16px;
+      background-color: #222;
+      border: 1px solid #39c5bb;
+      border-radius: 10px;
       color: #39c5bb;
-      font-size: 22px;
-      transition: transform 0.3s;
+      transition: 0.3s;
     }
 
-    .social-links a:hover {
-      transform: scale(1.2);
-      color: #ffffff;
-    }
-
-    .contact-info {
-      text-align: center;
-      font-size: 16px;
-      margin-top: 10px;
-      color: #ccc;
-    }
-
-    .contact-info a {
-      color: #39c5bb;
+    nav a:hover {
+      background-color: #39c5bb;
+      color: #111;
     }
   </style>
-  <!-- مكتبة أيقونات Font Awesome عبر CDN يعمل -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-yH9iIbM5n+d6v4b09f95MSt1k/RAw0BrsFQ0azW65flCJKWw8yU5N2YgkqRhsQkpYv8/N4qep+AzqB9FEtYV3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+
   <header>
     <img src="images/profile.jpg" alt="صورة جاسم" class="profile-image" />
-    <h1>مدونة جاسم أحمد حسون</h1>
+    <h1>تقني مختبرات طبية جاسم أحمد حسون</h1>
+
     <div class="social-links">
-      <a href="https://www.facebook.com/share/16UWVSn52w/" target="_blank" title="فيسبوك"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://www.instagram.com/jassem.ahmed88" target="_blank" title="إنستغرام"><i class="fab fa-instagram"></i></a>
-      <a href="https://t.me/Jasem900" target="_blank" title="تليجرام"><i class="fab fa-telegram"></i></a>
-    </div>
-    <div class="contact-info">
-      <p>📞 <a href="tel:07806810202">07806810202</a></p>
-      <p>📧 <a href="mailto:jasemahmed170@gmail.com">jasemahmed170@gmail.com</a></p>
+      <a href="https://www.facebook.com/share/16UWVSn52w/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/jassem.ahmed88" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://t.me/Jasem900" target="_blank"><i class="fab fa-telegram"></i></a>
+      <a href="mailto:jasemahmed170@gmail.com" title="راسلني عبر البريد"><i class="fas fa-envelope"></i></a>
+      <a href="tel:+9647806810202" title="اتصل بي"><i class="fas fa-phone"></i></a>
     </div>
   </header>
 
   <div class="container">
-    <section class="about">
+
+    <nav>
+      <a href="#about">من أنا</a>
+      <a href="#contact">التواصل</a>
+      <a href="post1.html">المنشور الأول</a>
+      <a href="post2.html">المنشور الثاني</a>
+    </nav>
+
+    <section id="about" class="box">
       <h2>من أنا</h2>
       <p>
         أنا جاسم أحمد من العراق، محافظة صلاح الدين، قضاء الشرقاط، ناحية آشور. خريج معهد طبي - قسم المختبرات الطبية، مواليد 2006.
       </p>
     </section>
 
-    <section class="posts">
-      <h2>أحدث المقالات</h2>
+    <section id="contact" class="box">
+      <h2>التواصل</h2>
+      <p>رقمي: 07806810202</p>
+      <p>البريد الإلكتروني: <a href="mailto:jasemahmed170@gmail.com">jasemahmed170@gmail.com</a></p>
+    </section>
 
+    <section class="box">
+      <h2>أحدث المقالات</h2>
       <div class="post">
-        <h3><a href="posts/post1.html">أنواع التحاليل الطبية</a></h3>
+        <h3><a href="post1.html">أنواع التحاليل الطبية</a></h3>
         <p>مقدمة عن التحاليل الطبية الشائعة وفوائدها في المتابعة الصحية...</p>
       </div>
-
       <div class="post">
-        <h3><a href="posts/post2.html">حياتي كطالب مختبرات</a></h3>
+        <h3><a href="post2.html">حياتي كطالب مختبرات</a></h3>
         <p>تجربتي في الدراسة، والتحديات التي واجهتها، وأهم الدروس...</p>
       </div>
     </section>
 
     <div class="visitor-counter">
-      الزوار: 
-      <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fjasem1000.github.io%2Fmyblog%2F&count_bg=%2339C5BB&title_bg=%23000000&icon=globe.svg&icon_color=%23FFFFFF&title=عدد%20الزوار&edge_flat=false" alt="عداد الزوار"/>
+      عدد الزوار: <br/>
+      <img src="https://www.cutercounter.com/hits.php?id=hmxfpfq&nd=6&style=1" alt="عدد الزوار">
     </div>
   </div>
+
+  <footer>
+    جميع الحقوق محفوظة © جاسم أحمد حسون
+  </footer>
+
 </body>
 </html>
+
