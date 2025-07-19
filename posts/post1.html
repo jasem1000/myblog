@@ -6,8 +6,8 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #222;
+      background-color: #121212;
+      color: #e0e0e0;
       margin: 0;
       padding: 20px;
       line-height: 1.8;
@@ -16,34 +16,30 @@
     .container {
       max-width: 900px;
       margin: auto;
-      background: #fff;
+      background: #1e1e1e;
       padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.6);
     }
 
     h1, h2, h3 {
-      color: #004466;
+      color: #00bcd4;
+      margin-top: 30px;
     }
 
     a {
-      color: #0077cc;
+      color: #4fc3f7;
       text-decoration: none;
       font-weight: bold;
     }
 
     ul {
       margin-right: 20px;
+      list-style-type: square;
     }
 
     .section {
-      margin-bottom: 30px;
-    }
-
-    img {
-      max-width: 100%;
-      border-radius: 12px;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
     }
 
     table {
@@ -53,7 +49,7 @@
     }
 
     table, th, td {
-      border: 1px solid #ccc;
+      border: 1px solid #333;
     }
 
     th, td {
@@ -62,51 +58,47 @@
     }
 
     th {
-      background-color: #e0f0f7;
-      color: #004466;
+      background-color: #263238;
+      color: #80deea;
     }
 
-    .share-buttons {
+    td {
+      background-color: #1a1a1a;
+    }
+
+    .action-buttons, .share-buttons {
       margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
     }
 
-    .share-buttons span {
-      display: inline-block;
-      margin-left: 10px;
-    }
-
+    .action-buttons button,
     .share-buttons a {
-      display: inline-block;
-      background-color: #eee;
       padding: 10px 15px;
+      border: none;
       border-radius: 8px;
-      color: #fff;
-      font-weight: bold;
+      cursor: pointer;
       text-decoration: none;
+      font-weight: bold;
       transition: 0.3s;
+      color: #fff;
+    }
+
+    .action-buttons button {
+      background-color: #00acc1;
+    }
+
+    .action-buttons button:hover {
+      background-color: #00838f;
     }
 
     .whatsapp { background-color: #25D366; }
     .facebook { background-color: #3b5998; }
     .twitter { background-color: #1da1f2; }
 
-    .action-buttons {
-      margin-top: 20px;
-    }
-
-    .action-buttons button {
-      margin-left: 10px;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 8px;
-      background-color: #0077cc;
-      color: white;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .action-buttons button:hover {
-      background-color: #005fa3;
+    .share-buttons a:hover {
+      opacity: 0.8;
     }
 
     @media (max-width: 600px) {
@@ -116,10 +108,10 @@
 
       th, td {
         font-size: 14px;
-        padding: 8px;
       }
 
-      .share-buttons a, .action-buttons button {
+      .action-buttons button,
+      .share-buttons a {
         font-size: 14px;
         padding: 8px 10px;
       }
@@ -128,8 +120,9 @@
   <script>
     function copyLink() {
       navigator.clipboard.writeText(window.location.href);
-      alert("تم نسخ رابط المقال!");
+      alert("✅ تم نسخ رابط المقال!");
     }
+
     function printPage() {
       window.print();
     }
@@ -137,51 +130,49 @@
 </head>
 <body>
   <div class="container">
-    <!-- صورة -->
-    <img src="https://www.alnajah.edu/sites/default/files/styles/max_325x325/public/2021-02/Medical%20Tests.jpg" alt="أهمية التحاليل الطبية">
-
     <h1>أهمية التحاليل الطبية في التشخيص</h1>
+
     <p>
-      التحاليل الطبية تُعتبر من أهم أدوات التشخيص الحديثة، حيث تساعد في اكتشاف الأمراض مبكرًا وتحديد مدى تطورها، مما يسهم في تقديم العلاج المناسب في الوقت المناسب.
+      تُعد التحاليل الطبية أداة لا غنى عنها في الطب الحديث، حيث تساهم في التشخيص المبكر والدقيق للأمراض، وتوجه الطبيب نحو العلاج المناسب في الوقت المناسب.
     </p>
 
-    <!-- أقسام التحاليل -->
     <div class="section">
-      <h2>أنواع التحاليل الطبية ومتى تُطلب</h2>
+      <h2>أنواع التحاليل ومتى تُطلب</h2>
 
       <h3>1. تحاليل الدم</h3>
       <ul>
-        <li><strong>CBC:</strong> فحص شامل لمكونات الدم - عند التعب أو الشك بالتهابات.</li>
-        <li><strong>Glucose:</strong> فحص السكري - عند الشك بمرض السكري.</li>
-        <li><strong>ALT/AST:</strong> فحص الكبد - عند وجود مشاكل كبدية.</li>
+        <li><strong>CBC:</strong> فحص شامل لمكونات الدم (تُطلب عند التعب أو الشك بفقر الدم).</li>
+        <li><strong>Glucose:</strong> لقياس السكر (تُطلب عند الشك بالسكري).</li>
+        <li><strong>ALT/AST:</strong> تحليل وظائف الكبد (عند الاشتباه بخلل كبدي).</li>
       </ul>
 
       <h3>2. تحاليل البول</h3>
       <ul>
-        <li>تحليل البول الكامل - للكشف عن التهابات أو مشاكل الكلى.</li>
+        <li>تحليل بول كامل - للكشف عن التهابات أو مشاكل في الكلى والمثانة.</li>
       </ul>
 
       <h3>3. تحاليل البراز</h3>
       <ul>
-        <li>تحليل البراز للكشف عن طفيليات أو دم خفي.</li>
+        <li>تحليل براز - للكشف عن الطفيليات والدم الخفي والعدوى الهضمية.</li>
       </ul>
 
       <h3>4. تحاليل الهرمونات</h3>
       <ul>
-        <li>تحليل TSH وهرمونات الغدة الدرقية - عند الشعور بخمول أو نشاط زائد.</li>
+        <li>TSH و T3 و T4 - لتقييم نشاط الغدة الدرقية.</li>
+        <li>هرمونات الخصوبة - عند تأخر الحمل للرجال والنساء.</li>
       </ul>
 
       <h3>5. تحاليل الفيروسات</h3>
       <ul>
-        <li>تحليل فيروس الكبد B و C و HIV.</li>
+        <li>HBV, HCV, HIV - للكشف عن فيروسات الكبد وفيروس نقص المناعة.</li>
       </ul>
     </div>
-    <!-- جدول -->
-    <h2>جدول تحاليل شائعة ووظائفها</h2>
+
+    <h2>جدول ملخص لأهم التحاليل</h2>
     <table>
       <thead>
         <tr>
-          <th>اسم التحليل</th>
+          <th>التحليل</th>
           <th>الوظيفة</th>
           <th>متى يُطلب؟</th>
         </tr>
@@ -189,33 +180,32 @@
       <tbody>
         <tr>
           <td>CBC</td>
-          <td>قياس خلايا الدم وتشخيص فقر الدم</td>
-          <td>تعب، دوخة، التهابات</td>
+          <td>تشخيص فقر الدم والعدوى</td>
+          <td>عند التعب أو الاشتباه بالتهاب</td>
         </tr>
         <tr>
           <td>Glucose</td>
-          <td>تشخيص ومتابعة مرض السكري</td>
-          <td>عند الشك بالسكري</td>
+          <td>فحص مستويات السكر</td>
+          <td>عند الشك في مرض السكري</td>
         </tr>
         <tr>
           <td>ALT/AST</td>
-          <td>تقييم وظائف الكبد</td>
-          <td>عند أمراض الكبد</td>
+          <td>تحليل وظائف الكبد</td>
+          <td>أعراض الكبد أو قبل عملية</td>
         </tr>
         <tr>
           <td>TSH</td>
-          <td>تحليل الغدة الدرقية</td>
-          <td>عند خمول أو نشاط زائد</td>
+          <td>تقييم الغدة الدرقية</td>
+          <td>خمول، تسارع، ضعف طاقة</td>
         </tr>
         <tr>
           <td>تحليل بول</td>
-          <td>كشف التهابات ومشاكل الكلى</td>
-          <td>حرقة أو ألم بولي</td>
+          <td>كشف التهابات البول ومشاكل الكلى</td>
+          <td>حرقة أو ألم أثناء التبول</td>
         </tr>
       </tbody>
     </table>
 
-    <!-- أزرار العمليات -->
     <div class="action-buttons">
       <button onclick="copyLink()">📋 نسخ الرابط</button>
       <button onclick="printPage()">🖨️ طباعة المقال</button>
@@ -224,21 +214,14 @@
       </a>
     </div>
 
-    <!-- أزرار المشاركة -->
     <div class="share-buttons">
-      <h3>📢 شارك المقال:</h3>
-      <span>
-        <a class="whatsapp" href="https://wa.me/?text=أهمية التحاليل الطبية: https://jasem1000.github.io/myblog/" target="_blank">واتساب</a>
-      </span>
-      <span>
-        <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://jasem1000.github.io/myblog/" target="_blank">فيسبوك</a>
-      </span>
-      <span>
-        <a class="twitter" href="https://twitter.com/intent/tweet?url=https://jasem1000.github.io/myblog/&text=أهمية التحاليل الطبية" target="_blank">تويتر</a>
-      </span>
+      <h3>شارك المقال:</h3>
+      <a class="whatsapp" href="https://wa.me/?text=أهمية التحاليل الطبية: https://jasem1000.github.io/myblog/" target="_blank">واتساب</a>
+      <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://jasem1000.github.io/myblog/" target="_blank">فيسبوك</a>
+      <a class="twitter" href="https://twitter.com/intent/tweet?url=https://jasem1000.github.io/myblog/&text=أهمية التحاليل الطبية" target="_blank">تويتر</a>
     </div>
 
-    <br>
+    <br><br>
     <a href="https://jasem1000.github.io/myblog/">⬅️ العودة إلى الصفحة الرئيسية</a>
   </div>
 </body>
